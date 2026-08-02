@@ -1,8 +1,24 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './components/layout/Layout'
+import PlaceholderPage from './components/ui/PlaceholderPage'
+
 export default function App() {
   return (
-    <main style={{ padding: '4rem 1.5rem', textAlign: 'center' }}>
-      <h1>SHPE at UIC</h1>
-      <p>Site rebuild in progress — pages are being built one at a time.</p>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<PlaceholderPage title="Home" />} />
+          <Route path="/officers" element={<PlaceholderPage title="Officers" />} />
+          <Route path="/shpetinas" element={<PlaceholderPage title="SHPEtinas" />} />
+          <Route path="/mentorshpe" element={<PlaceholderPage title="MentorSHPE" />} />
+          <Route path="/events" element={<PlaceholderPage title="Events — Coming Soon" />} />
+          <Route path="/dia-de-ciencias" element={<PlaceholderPage title="Dia de Ciencias — Coming Soon" />} />
+          <Route path="/sponsors" element={<PlaceholderPage title="Sponsors — Coming Soon" />} />
+          <Route path="/newsletter" element={<PlaceholderPage title="Newsletter — Coming Soon" />} />
+          <Route path="/join-us" element={<PlaceholderPage title="Join Us — Coming Soon" />} />
+          <Route path="*" element={<PlaceholderPage title="Page Not Found" />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
