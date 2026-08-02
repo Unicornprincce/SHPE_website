@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --navy: #002868;
-  --navy-dark: #001a47;
-  --navy-light: #0a3580;
-  --gold: #FFB81C;
-  --gold-dark: #e6a418;
-  --red: #BE0000;
+  /* SHPE National + UIC brand colors (official, per shpe.org comms guide + uillinois.edu brand palette) */
+  --navy: #001f5b;       /* SHPE Navy Blue / near-identical to UIC Navy Pier Blue #001E62 */
+  --navy-dark: #00143d;
+  --navy-light: #0a2f73;
+  --bright-blue: #0070c0; /* SHPE Bright Blue - interactive/link states */
+  --powder-blue: #72a9be; /* SHPE Powder Blue - soft accents */
+  --orange: #fd652f;      /* SHPE Orange - primary accent */
+  --orange-dark: #e04f1d;
+  --red: #d50032;         /* UIC Fire Engine Red - secondary accent, used sparingly */
+  --grey: #626366;        /* SHPE Grey - toned-down text */
+
   --white: #ffffff;
-  --off-white: #f8f8f8;
+  --off-white: #f8f9fb;
   --light-gray: #f0f2f5;
   --border: #e0e4ea;
-  --text: #4a4a4a;
-  --text-dark: #1a1a2e;
-  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
-  --shadow-lg: 0 8px 40px rgba(0,0,0,0.16);
+  --text: #3d3d40;
+  --text-dark: #14161c;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.16);
   --section-max: 1200px;
   --section-pad: 80px 24px;
   --transition: 0.25s ease;
@@ -68,6 +74,10 @@ button {
   font-family: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ── Utility classes ── */
 .section-dark {
   background: var(--navy);
@@ -85,14 +95,15 @@ button {
   color: var(--text);
 }
 
+.section-muted {
+  background: var(--off-white);
+  color: var(--text);
+}
+
 .section-center {
   max-width: var(--section-max);
   margin: 0 auto;
   padding: var(--section-pad);
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 /* ── Shared button styles ── */
@@ -102,20 +113,20 @@ html {
   border-radius: 4px;
   font-weight: 700;
   font-size: 0.95rem;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   transition: background var(--transition), color var(--transition), transform var(--transition);
   cursor: pointer;
   border: 2px solid transparent;
   text-decoration: none;
 }
-.btn-gold {
-  background: var(--gold);
-  color: var(--navy-dark);
-  border-color: var(--gold);
+.btn-primary {
+  background: var(--orange);
+  color: var(--white);
+  border-color: var(--orange);
 }
-.btn-gold:hover {
-  background: var(--gold-dark);
-  border-color: var(--gold-dark);
+.btn-primary:hover {
+  background: var(--orange-dark);
+  border-color: var(--orange-dark);
   transform: translateY(-2px);
 }
 .btn-outline {
