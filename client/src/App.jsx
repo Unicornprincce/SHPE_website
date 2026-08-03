@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import PlaceholderPage from './components/ui/PlaceholderPage'
 import Home from './pages/Home'
+import Officers from './pages/Officers'
 
 export default function App() {
   return (
@@ -9,7 +10,7 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/officers" element={<PlaceholderPage title="Officers" />} />
+          <Route path="/officers" element={<Officers />} />
           <Route path="/shpetinas" element={<PlaceholderPage title="SHPEtinas" />} />
           <Route path="/mentorshpe" element={<PlaceholderPage title="MentorSHPE" />} />
           <Route path="/events" element={<PlaceholderPage title="Events — Coming Soon" />} />
