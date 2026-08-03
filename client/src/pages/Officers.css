@@ -1,7 +1,3 @@
-.officers {
-  background: linear-gradient(180deg, var(--soft-blue) 0%, var(--soft-blue-dark) 100%);
-}
-
 .officers-hero {
   padding: 64px 0 48px;
 }
