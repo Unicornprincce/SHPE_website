@@ -1,13 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import PlaceholderPage from './components/ui/PlaceholderPage'
+import Home from './pages/Home'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<PlaceholderPage title="Home" />} />
+          <Route path="/" element={<Home />} />
           <Route path="/officers" element={<PlaceholderPage title="Officers" />} />
           <Route path="/shpetinas" element={<PlaceholderPage title="SHPEtinas" />} />
           <Route path="/mentorshpe" element={<PlaceholderPage title="MentorSHPE" />} />
