@@ -1,3 +1,4 @@
+import groupPhoto from '../assets/officers/group photo.jpeg'
 import { OFFICER_SECTIONS } from '../data/officers'
 import OfficerCard from '../components/cards/OfficerCard'
 import SectionTitle from '../components/ui/SectionTitle'
@@ -6,7 +7,9 @@ import './Officers.css'
 export default function Officers() {
   return (
     <main className="officers">
-      <section className="officers-hero section-dark">
+      <section className="officers-hero">
+        <img src={groupPhoto} alt="SHPE at UIC board members" className="officers-hero-img" />
+        <div className="officers-hero-overlay" />
         <div className="section-center officers-hero-inner">
           <h1>SHPE at UIC Board Members</h1>
           <p>Meet the students leading the chapter this year.</p>
