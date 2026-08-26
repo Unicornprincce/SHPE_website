@@ -36,14 +36,10 @@
   padding: 0 24px;
 }
 
-.home-hero-logo-badge {
+.home-hero-logo {
   width: min(320px, 70vw);
-  margin: 0 auto 20px;
-}
-
-.home-hero-logo-badge img {
-  width: 100%;
   height: auto;
+  margin: 0 auto 20px;
 }
 
 .home-hero-content h1 {

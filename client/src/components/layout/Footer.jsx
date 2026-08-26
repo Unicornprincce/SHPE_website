@@ -18,8 +18,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-inner section-center">
         <div className="footer-brand">
-          <span className="logo-badge footer-logo-badge">
-            <img src={logo} alt="SHPE at UIC" />
+          <span className="logo-chip">
+            <img src={logo} alt="SHPE at UIC" className="footer-logo" />
           </span>
           <p>
             Society of Hispanic Professional Engineers — University of Illinois Chicago chapter.

@@ -35,7 +35,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar-inner">
         <NavLink to="/" className="navbar-logo" onClick={() => setMobileOpen(false)}>
-          <span className="logo-badge">
+          <span className="logo-chip">
             <img src={logo} alt="SHPE at UIC" />
           </span>
         </NavLink>

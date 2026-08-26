@@ -161,17 +161,13 @@ html {
   font-size: clamp(1.6rem, 3vw, 2.2rem);
 }
 
-/* ── Shared logo badge (white plate so the navy wordmark reads on dark backgrounds) ── */
-.logo-badge {
+/* ── Shared subtle logo chip (keeps the navy wordmark readable on navy backgrounds) ── */
+.logo-chip {
   display: inline-flex;
   align-items: center;
-  width: fit-content;
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.94);
   border-radius: 6px;
-  padding: 6px 10px;
-}
-.logo-badge img {
-  display: block;
+  padding: 4px 8px;
 }
 
 /* ── Shared gradient-overlay image treatment ── */

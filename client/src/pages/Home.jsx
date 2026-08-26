@@ -17,9 +17,7 @@ export default function Home() {
         <img src={heroPhoto} alt="SHPE at UIC members" className="home-hero-img" />
         <div className="home-hero-overlay" />
         <div className="home-hero-content">
-          <span className="logo-badge home-hero-logo-badge">
-            <img src={logo} alt="SHPE at UIC logo" />
-          </span>
+          <img src={logo} alt="SHPE at UIC logo" className="home-hero-logo" />
           <h1>SHPE at UIC</h1>
           <p>2026 National Chapter</p>
         </div>
