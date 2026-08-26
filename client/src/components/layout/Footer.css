@@ -17,10 +17,9 @@
   gap: 14px;
 }
 
-.footer-logo {
-  height: 48px;
-  width: fit-content;
-  border-radius: 4px;
+.footer-logo-badge img {
+  height: 36px;
+  width: auto;
 }
 
 .footer-brand p {

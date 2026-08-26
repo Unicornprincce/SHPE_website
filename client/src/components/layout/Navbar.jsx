@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaBars, FaXmark, FaChevronDown } from 'react-icons/fa6'
-import logo from '../../assets/logos/shpelogo.jpg'
+import logo from '../../assets/logos/SHPE_logo_horiz_University of Illinois at Chicago_PMS.png'
 import './Navbar.css'
 
 const NAV_LINKS = [
@@ -11,13 +11,13 @@ const NAV_LINKS = [
     children: [
       { label: 'SHPEtinas', to: '/shpetinas' },
       { label: 'MentorSHPE', to: '/mentorshpe' },
+      { label: 'Dia de Ciencias', to: '/dia-de-ciencias' },
     ],
   },
   { label: 'Officers', to: '/officers' },
-  { label: 'Events', to: '/events' },
-  { label: 'Dia de Ciencias', to: '/dia-de-ciencias' },
+  { label: 'Awards', to: '/awards' },
   { label: 'Sponsors', to: '/sponsors' },
-  { label: 'Newsletter', to: '/newsletter' },
+  { label: 'Calendar', to: '/calendar' },
 ]
 
 export default function Navbar() {
@@ -35,7 +35,9 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar-inner">
         <NavLink to="/" className="navbar-logo" onClick={() => setMobileOpen(false)}>
-          <img src={logo} alt="SHPE at UIC" />
+          <span className="logo-badge">
+            <img src={logo} alt="SHPE at UIC" />
+          </span>
         </NavLink>
 
         <nav className="navbar-links" aria-label="Primary">

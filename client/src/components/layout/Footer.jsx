@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { FaInstagram, FaDiscord } from 'react-icons/fa6'
-import logo from '../../assets/logos/shpelogo.jpg'
+import logo from '../../assets/logos/SHPE_logo_horiz_University of Illinois at Chicago_PMS.png'
 import './Footer.css'
 
 const QUICK_LINKS = [
@@ -18,7 +18,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-inner section-center">
         <div className="footer-brand">
-          <img src={logo} alt="SHPE at UIC" className="footer-logo" />
+          <span className="logo-badge footer-logo-badge">
+            <img src={logo} alt="SHPE at UIC" />
+          </span>
           <p>
             Society of Hispanic Professional Engineers — University of Illinois Chicago chapter.
             Leading Hispanics in STEM.

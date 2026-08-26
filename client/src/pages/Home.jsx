@@ -1,5 +1,4 @@
-import { NavLink } from 'react-router-dom'
-import logo from '../assets/logos/shpelogo.jpg'
+import logo from '../assets/logos/SHPE_logo_horiz_University of Illinois at Chicago_PMS.png'
 import heroPhoto from '../assets/home/HomePic.jpg'
 import statsPhoto from '../assets/home/Homepic2.jpg'
 import lookingAheadPhoto from '../assets/home/Homepic3.jpg'
@@ -18,7 +17,9 @@ export default function Home() {
         <img src={heroPhoto} alt="SHPE at UIC members" className="home-hero-img" />
         <div className="home-hero-overlay" />
         <div className="home-hero-content">
-          <img src={logo} alt="SHPE at UIC logo" className="home-hero-logo" />
+          <span className="logo-badge home-hero-logo-badge">
+            <img src={logo} alt="SHPE at UIC logo" />
+          </span>
           <h1>SHPE at UIC</h1>
           <p>2026 National Chapter</p>
         </div>
@@ -107,16 +108,6 @@ export default function Home() {
             <img src={majorsChart} alt="Chapter demographics: breakdown of members by major" />
             <img src={yearChart} alt="Chapter demographics: breakdown of members by year in school" />
           </div>
-        </div>
-      </section>
-
-      {/* Newsletter CTA */}
-      <section className="home-newsletter section-dark">
-        <div className="section-center home-newsletter-inner">
-          <h2>Come to our newsletter</h2>
-          <NavLink to="/newsletter" className="btn btn-primary">
-            Subscribe
-          </NavLink>
         </div>
       </section>
     </main>

@@ -15,10 +15,10 @@ export default function App() {
           <Route path="/officers" element={<Officers />} />
           <Route path="/shpetinas" element={<SHPEtinas />} />
           <Route path="/mentorshpe" element={<MentorSHPE />} />
-          <Route path="/events" element={<PlaceholderPage title="Events — Coming Soon" />} />
           <Route path="/dia-de-ciencias" element={<PlaceholderPage title="Dia de Ciencias — Coming Soon" />} />
           <Route path="/sponsors" element={<PlaceholderPage title="Sponsors — Coming Soon" />} />
-          <Route path="/newsletter" element={<PlaceholderPage title="Newsletter — Coming Soon" />} />
+          <Route path="/awards" element={<PlaceholderPage title="Awards — Coming Soon" />} />
+          <Route path="/calendar" element={<PlaceholderPage title="Calendar — Coming Soon" />} />
           <Route path="/join-us" element={<PlaceholderPage title="Join Us — Coming Soon" />} />
           <Route path="*" element={<PlaceholderPage title="Page Not Found" />} />
         </Route>

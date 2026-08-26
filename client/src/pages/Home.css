@@ -36,11 +36,14 @@
   padding: 0 24px;
 }
 
-.home-hero-logo {
-  width: 96px;
-  height: auto;
+.home-hero-logo-badge {
+  width: min(320px, 70vw);
   margin: 0 auto 20px;
-  border-radius: 8px;
+}
+
+.home-hero-logo-badge img {
+  width: 100%;
+  height: auto;
 }
 
 .home-hero-content h1 {
@@ -169,19 +172,6 @@
   background: linear-gradient(160deg, #f7fafd 0%, #e2ecf7 100%);
   box-shadow: var(--shadow-sm);
   padding: 12px;
-}
-
-/* ── Newsletter CTA ── */
-.home-newsletter {
-  padding: 64px 0;
-}
-
-.home-newsletter-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  text-align: center;
 }
 
 @media (max-width: 800px) {
