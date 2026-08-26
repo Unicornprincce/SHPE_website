@@ -26,6 +26,7 @@ export default function Home() {
 
       {/* Lead paragraph */}
       <section className="home-lead section-center">
+        <h2 className="home-lead-heading">Who We Are</h2>
         <p>
           SHPE at the University of Illinois Chicago is a student-led community built on
           mentorship, collaboration, and a shared commitment to creating opportunity in STEM. As
@@ -35,30 +36,37 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Alternating text/photo rows */}
-      <section className="home-row section-center">
-        <div className="home-row-text">
+      {/* Full-bleed alternating panels */}
+      <section className="home-panel-row home-panel-navy">
+        <div className="home-panel-text">
+          <h2 className="home-panel-heading">Our Strength</h2>
           <p>
-            <strong>Our strength comes from the way we work together.</strong> With{' '}
-            <strong>100+ paid members</strong>, SHPE UIC hosted <strong>60+ events</strong> last
-            semester with an average <strong>General Body Meeting attendance of 50+ members</strong>,
-            creating consistent, high-quality engagement. Last semester, we hosted{' '}
-            <strong>27 collaborative events</strong>, partnering with institutions such as IIT,
-            Northwestern, and DePaul, as well as campus organizations including ALPFA, Latinos
-            Unidos, and others. Together, these programs provide sponsors with repeated,
-            meaningful touchpoints with a diverse and motivated engineering student population.
+            Our strength comes from the way we work together. With 100+ paid members, SHPE UIC
+            hosted 60+ events last semester with an average General Body Meeting attendance of
+            50+ members, creating consistent, high-quality engagement. Last semester, we hosted
+            27 collaborative events, partnering with institutions such as IIT, Northwestern, and
+            DePaul, as well as campus organizations including ALPFA, Latinos Unidos, and others.
+            Together, these programs provide sponsors with repeated, meaningful touchpoints with a
+            diverse and motivated engineering student population.
           </p>
         </div>
-        <GradientImage src={statsPhoto} alt="SHPE UIC members gathered outside" className="home-row-photo" />
+        <GradientImage
+          src={statsPhoto}
+          alt="SHPE UIC members gathered outside"
+          bleed
+          className="home-panel-photo"
+        />
       </section>
 
-      <section className="home-row home-row-reverse section-center">
+      <section className="home-panel-row home-panel-white home-panel-row-reverse">
         <GradientImage
           src={lookingAheadPhoto}
           alt="SHPE UIC officers presenting at a General Body Meeting"
-          className="home-row-photo"
+          bleed
+          className="home-panel-photo"
         />
-        <div className="home-row-text">
+        <div className="home-panel-text">
+          <h2 className="home-panel-heading">Looking Ahead</h2>
           <p>
             Looking ahead, our chapter is focused on expanding access to national opportunities,
             growing and retaining our membership, and strengthening campus and regional
@@ -68,19 +76,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="home-row section-center">
-        <div className="home-row-text">
+      <section className="home-panel-row home-panel-orange">
+        <div className="home-panel-text">
+          <h2 className="home-panel-heading">Recognition &amp; Impact</h2>
           <p>
-            Recognized as a <strong>Gold Chapter (1 of 4 nationwide)</strong> and a{' '}
-            <strong>Region 6 Outstanding Chapter</strong>, SHPE UIC continues to grow through
-            intentional leadership and meaningful partnerships.{' '}
-            <strong>
-              Through sponsorship, companies gain direct access to engaged engineering talent,
-              increased brand visibility across campus and regional networks, and the opportunity
-              to build long-term recruiting pipelines rooted in community and impact.
-            </strong>
+            Recognized as a Gold Chapter (1 of 4 nationwide) and a Region 6 Outstanding Chapter,
+            SHPE UIC continues to grow through intentional leadership and meaningful partnerships.
+            Through sponsorship, companies gain direct access to engaged engineering talent,
+            increased brand visibility across campus and regional networks, and the opportunity to
+            build long-term recruiting pipelines rooted in community and impact.
           </p>
-          <p className="home-row-tagline">
+          <p className="home-panel-tagline">
             At SHPE UIC, we believe in lifting as we rise. Together, we are shaping the next
             generation of leaders in STEM.
           </p>
@@ -88,7 +94,8 @@ export default function Home() {
         <GradientImage
           src={recognitionPhoto}
           alt="SHPE UIC members at a community event"
-          className="home-row-photo"
+          bleed
+          className="home-panel-photo"
         />
       </section>
 

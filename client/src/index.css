@@ -185,6 +185,11 @@ html {
 .gradient-image-bottom::after {
   background: linear-gradient(to top, rgba(0, 31, 91, 0.85) 0%, rgba(0, 31, 91, 0.15) 55%, rgba(0, 31, 91, 0) 100%);
 }
+.gradient-image-bleed {
+  border-radius: 0;
+  box-shadow: none;
+  height: 100%;
+}
 .gradient-image-orange::after {
   background: linear-gradient(160deg, rgba(224, 79, 29, 0.5) 0%, rgba(253, 101, 47, 0.12) 55%, rgba(253, 101, 47, 0) 100%);
 }
