@@ -1,0 +1,144 @@
+.sponsors-hero {
+  padding: 64px 0 48px;
+  text-align: center;
+}
+
+.sponsors-hero-inner h1 {
+  color: var(--white);
+}
+
+.sponsors-hero-inner p {
+  margin-top: 10px;
+  color: var(--powder-blue);
+  font-size: 1.05rem;
+}
+
+.sponsors-lead {
+  padding-top: 56px;
+  padding-bottom: 16px;
+  max-width: 780px;
+}
+
+.sponsors-lead p {
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: var(--text);
+}
+
+.sponsors-tiers {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.sponsors-tiers-note {
+  text-align: center;
+  color: var(--grey);
+  font-size: 0.88rem;
+  margin-top: -24px;
+  margin-bottom: 32px;
+}
+
+.sponsors-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.sponsors-tier-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  padding: 28px 20px;
+  border-top: 6px solid var(--grey);
+  text-align: center;
+}
+
+.sponsors-tier-bronze {
+  border-top-color: #b08d57;
+}
+.sponsors-tier-silver {
+  border-top-color: #9aa7b5;
+}
+.sponsors-tier-gold {
+  border-top-color: var(--orange);
+}
+.sponsors-tier-platinum {
+  border-top-color: var(--navy);
+}
+
+.sponsors-tier-name {
+  font-size: 1.15rem;
+}
+
+.sponsors-tier-price {
+  margin-top: 4px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--orange-dark);
+}
+
+.sponsors-tier-benefits {
+  margin-top: 18px;
+  text-align: left;
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.sponsors-why {
+  padding-top: 16px;
+  padding-bottom: 56px;
+}
+
+.sponsors-why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.sponsors-why-item {
+  background: var(--soft-blue);
+  border-radius: 12px;
+  padding: 20px 24px;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.sponsors-cta {
+  padding: 64px 0;
+}
+
+.sponsors-cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.sponsors-cta-inner p {
+  color: var(--powder-blue);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .sponsors-tier-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sponsors-why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .sponsors-tier-grid {
+    grid-template-columns: 1fr;
+  }
+}
