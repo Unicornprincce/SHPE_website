@@ -87,13 +87,6 @@
   min-height: clamp(360px, 44vw, 520px);
 }
 
-.home-panel-row-reverse {
-  direction: rtl;
-}
-.home-panel-row-reverse > * {
-  direction: ltr;
-}
-
 .home-panel-navy {
   background: var(--navy);
 }

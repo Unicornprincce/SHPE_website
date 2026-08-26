@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Officers from './pages/Officers'
 import SHPEtinas from './pages/programs/SHPEtinas'
 import MentorSHPE from './pages/programs/MentorSHPE'
+import DiaDeCiencias from './pages/programs/DiaDeCiencias'
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
           <Route path="/officers" element={<Officers />} />
           <Route path="/shpetinas" element={<SHPEtinas />} />
           <Route path="/mentorshpe" element={<MentorSHPE />} />
-          <Route path="/dia-de-ciencias" element={<PlaceholderPage title="Dia de Ciencias — Coming Soon" />} />
+          <Route path="/dia-de-ciencias" element={<DiaDeCiencias />} />
           <Route path="/sponsors" element={<PlaceholderPage title="Sponsors — Coming Soon" />} />
           <Route path="/awards" element={<PlaceholderPage title="Awards — Coming Soon" />} />
           <Route path="/calendar" element={<PlaceholderPage title="Calendar — Coming Soon" />} />

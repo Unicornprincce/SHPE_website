@@ -89,13 +89,6 @@
   padding-bottom: clamp(28px, 5vw, 48px);
 }
 
-.program-row-reverse {
-  direction: rtl;
-}
-.program-row-reverse > * {
-  direction: ltr;
-}
-
 .program-row-text p {
   font-size: clamp(0.82rem, 1.6vw, 1.05rem);
   line-height: 1.7;
