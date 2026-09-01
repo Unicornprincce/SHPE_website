@@ -97,7 +97,13 @@ export default function Sponsors() {
           </a>
           <p className="sponsors-cta-more">
             Or want more information?{' '}
-            <a href="mailto:externalvp.shpe.uic@gmail.com">Click here to learn more.</a>
+            <a
+              href="https://drive.google.com/file/d/122qip-BGBRxL2qKuhX5ZuNlGl4FuyXxU/view"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Click here to learn more.
+            </a>
           </p>
         </div>
       </section>

@@ -23,10 +23,14 @@ export default function JoinUs() {
             don&rsquo;t need to be a paid member to come to our events &mdash; paying just helps
             support SHPE and unlocks access to the National Convention.
           </p>
-          <button type="button" className="btn btn-primary btn-disabled" disabled>
+          <a
+            className="btn btn-primary"
+            href="https://www.shpeconnect.org/eweb/DynamicPage.aspx?WebCode=LoginRequired&expires=yes&Site=shpe"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Become a Member
-          </button>
-          <p className="join-us-coming-soon">Link coming soon</p>
+          </a>
         </div>
       </section>
 
