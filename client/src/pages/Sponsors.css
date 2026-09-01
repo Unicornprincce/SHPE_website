@@ -128,6 +128,16 @@
   margin-bottom: 8px;
 }
 
+.sponsors-cta-more {
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.sponsors-cta-more a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
   .sponsors-tier-grid {
     grid-template-columns: repeat(2, 1fr);

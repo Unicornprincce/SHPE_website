@@ -95,6 +95,10 @@ export default function Sponsors() {
           <a className="btn btn-primary" href="mailto:externalvp.shpe.uic@gmail.com">
             Contact Us
           </a>
+          <p className="sponsors-cta-more">
+            Or want more information?{' '}
+            <a href="mailto:externalvp.shpe.uic@gmail.com">Click here to learn more.</a>
+          </p>
         </div>
       </section>
     </main>
