@@ -9,6 +9,7 @@ import DiaDeCiencias from './pages/programs/DiaDeCiencias'
 import Sponsors from './pages/Sponsors'
 import Awards from './pages/Awards'
 import Calendar from './pages/Calendar'
+import JoinUs from './pages/JoinUs'
 
 export default function App() {
   return (
@@ -23,7 +24,7 @@ export default function App() {
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/awards" element={<Awards />} />
           <Route path="/calendar" element={<Calendar />} />
-          <Route path="/join-us" element={<PlaceholderPage title="Join Us — Coming Soon" />} />
+          <Route path="/join-us" element={<JoinUs />} />
           <Route path="*" element={<PlaceholderPage title="Page Not Found" />} />
         </Route>
       </Routes>
