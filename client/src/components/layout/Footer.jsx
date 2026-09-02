@@ -49,7 +49,7 @@ export default function Footer() {
               <FaInstagram aria-hidden="true" />
             </a>
             <a
-              href="https://discord.gg/PS4AdaSK9"
+              href="https://discord.gg/CagthVsvEb"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="SHPE at UIC on Discord"
