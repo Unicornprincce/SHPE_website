@@ -6,6 +6,7 @@ import Officers from './pages/Officers'
 import SHPEtinas from './pages/programs/SHPEtinas'
 import MentorSHPE from './pages/programs/MentorSHPE'
 import DiaDeCiencias from './pages/programs/DiaDeCiencias'
+import WomenInStemSummit from './pages/programs/WomenInStemSummit'
 import NationalConvention from './pages/programs/NationalConvention'
 import Sponsors from './pages/Sponsors'
 import Awards from './pages/Awards'
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/shpetinas" element={<SHPEtinas />} />
           <Route path="/mentorshpe" element={<MentorSHPE />} />
           <Route path="/dia-de-ciencias" element={<DiaDeCiencias />} />
+          <Route path="/women-in-stem-summit" element={<WomenInStemSummit />} />
           <Route path="/national-convention" element={<NationalConvention />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/awards" element={<Awards />} />

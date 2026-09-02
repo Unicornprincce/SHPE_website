@@ -12,6 +12,7 @@ const NAV_LINKS = [
       { label: 'SHPEtinas', to: '/shpetinas' },
       { label: 'MentorSHPE', to: '/mentorshpe' },
       { label: 'Dia de Ciencias', to: '/dia-de-ciencias' },
+      { label: 'Women in STEM Summit', to: '/women-in-stem-summit' },
     ],
   },
   { label: 'Officers', to: '/officers' },

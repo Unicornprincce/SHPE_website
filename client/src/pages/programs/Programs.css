@@ -99,6 +99,13 @@
   margin-top: 20px;
 }
 
+.program-row-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
 .program-row-photo {
   aspect-ratio: 4 / 3;
   min-width: 0;
