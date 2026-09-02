@@ -40,7 +40,7 @@ export default function Sponsors() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Download Partnership Package
+            Partnership Package
           </a>
         </div>
       </section>
