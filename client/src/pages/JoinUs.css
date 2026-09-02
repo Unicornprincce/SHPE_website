@@ -55,6 +55,25 @@
   gap: 12px;
 }
 
+.join-us-form-question {
+  margin-top: 22px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.btn-discord {
+  background: var(--navy);
+  color: var(--powder-blue);
+  border-color: var(--navy);
+}
+
+.btn-discord:hover {
+  background: var(--navy-dark);
+  border-color: var(--navy-dark);
+  transform: translateY(-2px);
+}
+
 .btn-disabled,
 .btn-disabled:hover {
   opacity: 0.55;

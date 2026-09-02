@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom'
 import { FaInstagram, FaLinkedin, FaDiscord } from 'react-icons/fa6'
 import { SiLinktree } from 'react-icons/si'
 import getInvolvedPhoto from '../assets/join-us/get-involved.jpg'
@@ -20,12 +19,21 @@ export default function JoinUs() {
         <div className="join-us-row-text">
           <h2 className="join-us-row-heading">Become a Member</h2>
           <p>
-            You can become a paid member through SHPE National using the button below. You
-            don&rsquo;t need to be a paid member to come to our events. Paying just helps
-            support SHPE and unlocks access to the National Convention.
+            Fill out our chapter form below to join SHPE at UIC. You don&rsquo;t need to be a
+            paid member to come to our events, but becoming one unlocks access to the
+            National Convention and other SHPE National perks.
           </p>
           <a
             className="btn btn-primary"
+            href="https://docs.google.com/forms/d/1s6pSxd-URO_W11gO6oebQcuEEau4vyb1xPpnXYpxzHQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Fill Out Our Form
+          </a>
+          <p className="join-us-form-question">Want to become a paid member?</p>
+          <a
+            className="btn btn-outline-navy"
             href="https://www.shpeconnect.org/eweb/DynamicPage.aspx?WebCode=LoginRequired&expires=yes&Site=shpe"
             target="_blank"
             rel="noopener noreferrer"
@@ -53,9 +61,14 @@ export default function JoinUs() {
             >
               Follow us on Instagram
             </a>
-            <NavLink className="btn btn-outline-navy" to="/mentorshpe">
-              Explore MentorSHPE
-            </NavLink>
+            <a
+              className="btn btn-discord"
+              href="https://discord.gg/qH5Ms83usz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join Our Discord
+            </a>
           </div>
         </div>
         <GradientImage
