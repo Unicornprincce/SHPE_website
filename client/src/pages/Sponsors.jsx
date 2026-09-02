@@ -59,7 +59,7 @@ export default function Sponsors() {
       <section className="sponsors-cta section-dark">
         <div className="section-center sponsors-cta-inner">
           <h2>Ready to Partner With Us?</h2>
-          <p>Reach out to our External Vice President and we&rsquo;ll follow up with a sponsorship packet.</p>
+          <p>Reach out to our External Vice President and we&rsquo;ll follow up!</p>
           <a className="btn btn-primary" href="mailto:externalvp.shpe.uic@gmail.com">
             Contact Us
           </a>

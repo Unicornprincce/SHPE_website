@@ -89,7 +89,7 @@ export default function JoinUs() {
         <div className="join-us-row-text">
           <h2 className="join-us-row-heading">Make It to Nationals</h2>
           <p>
-            We&rsquo;ll track event attendance on a leaderboard throughout the year. Members at the top of the leaderboard will be aknowledged!
+            We&rsquo;ll track event attendance on a leaderboard throughout the year. Members at the top of the leaderboard will be acknowledged!
           </p>
           <button type="button" className="btn btn-primary btn-disabled" disabled>
             View Leaderboard
@@ -121,7 +121,7 @@ export default function JoinUs() {
               <span>LinkedIn</span>
             </a>
             <a
-              href="https://discord.gg/PS4AdaSK9"
+              href="https://discord.gg/qH5Ms83usz"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="SHPE at UIC on Discord"
