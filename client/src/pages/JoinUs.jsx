@@ -89,8 +89,7 @@ export default function JoinUs() {
         <div className="join-us-row-text">
           <h2 className="join-us-row-heading">Make It to Nationals</h2>
           <p>
-            We&rsquo;ll track event attendance on a leaderboard throughout the year. The most
-            involved members earn a spot in our delegation to the SHPE National Convention.
+            We&rsquo;ll track event attendance on a leaderboard throughout the year. Members at the top of the leaderboard will be aknowledged!
           </p>
           <button type="button" className="btn btn-primary btn-disabled" disabled>
             View Leaderboard
