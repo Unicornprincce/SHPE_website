@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
-import { FaInstagram, FaDiscord } from 'react-icons/fa6'
+import { FaInstagram, FaLinkedin, FaDiscord } from 'react-icons/fa6'
+import { SiLinktree } from 'react-icons/si'
 import getInvolvedPhoto from '../assets/join-us/get-involved.jpg'
 import nationalsPhoto from '../assets/join-us/nationals.jpg'
 import GradientImage from '../components/ui/GradientImage'
@@ -23,10 +24,14 @@ export default function JoinUs() {
             don&rsquo;t need to be a paid member to come to our events &mdash; paying just helps
             support SHPE and unlocks access to the National Convention.
           </p>
-          <button type="button" className="btn btn-primary btn-disabled" disabled>
+          <a
+            className="btn btn-primary"
+            href="https://www.shpeconnect.org/eweb/DynamicPage.aspx?WebCode=LoginRequired&expires=yes&Site=shpe"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Become a Member
-          </button>
-          <p className="join-us-coming-soon">Link coming soon</p>
+          </a>
         </div>
       </section>
 
@@ -95,6 +100,15 @@ export default function JoinUs() {
               <span>Instagram</span>
             </a>
             <a
+              href="https://www.linkedin.com/company/shpe-at-uic"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="SHPE at UIC on LinkedIn"
+            >
+              <FaLinkedin aria-hidden="true" />
+              <span>LinkedIn</span>
+            </a>
+            <a
               href="https://discord.gg/PS4AdaSK9"
               target="_blank"
               rel="noopener noreferrer"
@@ -102,6 +116,15 @@ export default function JoinUs() {
             >
               <FaDiscord aria-hidden="true" />
               <span>Discord</span>
+            </a>
+            <a
+              href="https://linktr.ee/SHPE_UIC"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="SHPE at UIC on Linktree"
+            >
+              <SiLinktree aria-hidden="true" />
+              <span>Linktree</span>
             </a>
           </div>
         </div>

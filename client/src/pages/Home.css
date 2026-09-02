@@ -36,10 +36,19 @@
   padding: 0 24px;
 }
 
+/* White plate so the logo's navy lettering stays readable over the hero photo */
+.home-hero-logo-chip {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-md);
+}
+
 .home-hero-logo {
+  display: block;
   width: min(320px, 70vw);
   height: auto;
-  margin: 0 auto 20px;
 }
 
 .home-hero-content h1 {
@@ -151,20 +160,22 @@
   display: flex;
   gap: 32px;
   justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-}
-
-.home-demographics-charts img {
-  max-width: 480px;
-  width: 100%;
-  border-radius: 12px;
-  background: linear-gradient(160deg, #f7fafd 0%, #e2ecf7 100%);
-  box-shadow: var(--shadow-sm);
-  padding: 12px;
 }
 
 @media (max-width: 800px) {
   .home-hero {
     height: 64vh;
+  }
+
+  .home-panel-row {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .home-panel-photo {
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
 }

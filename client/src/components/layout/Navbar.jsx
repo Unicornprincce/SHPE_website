@@ -12,6 +12,7 @@ const NAV_LINKS = [
       { label: 'SHPEtinas', to: '/shpetinas' },
       { label: 'MentorSHPE', to: '/mentorshpe' },
       { label: 'Dia de Ciencias', to: '/dia-de-ciencias' },
+      { label: 'Women in STEM Summit', to: '/women-in-stem-summit' },
     ],
   },
   {
@@ -23,9 +24,11 @@ const NAV_LINKS = [
       { label: 'Committees', to: '/leadership/committees' },
     ],
   },
+  { label: 'National Convention', to: '/national-convention' },
   { label: 'Awards', to: '/awards' },
   { label: 'Sponsors', to: '/sponsors' },
   { label: 'Calendar', to: '/calendar' },
+  { label: 'Alumni', to: '/alumni' },
 ]
 
 export default function Navbar() {

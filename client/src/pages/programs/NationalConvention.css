@@ -1,0 +1,23 @@
+.national-convention-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--bright-blue);
+}
+
+.national-convention-cta {
+  padding: 64px 0;
+}
+
+.national-convention-cta-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.national-convention-cta-inner p {
+  margin: 14px 0 24px;
+  color: var(--powder-blue);
+  line-height: 1.7;
+}

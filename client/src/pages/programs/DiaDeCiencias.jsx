@@ -60,6 +60,14 @@ export default function DiaDeCiencias() {
             about science, to get an early, hands-on introduction to STEM &mdash; guided by
             near-peer mentors from UIC who look like them and speak their language.
           </p>
+          <a
+            className="btn btn-primary program-row-button"
+            href="https://ddcxep.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See Last Semester&rsquo;s Dia de Ciencias
+          </a>
         </div>
       </section>
     </main>

@@ -3,11 +3,31 @@ import heroPhoto from '../assets/home/HomePic.jpg'
 import statsPhoto from '../assets/home/Homepic2.jpg'
 import lookingAheadPhoto from '../assets/home/Homepic3.jpg'
 import recognitionPhoto from '../assets/home/homepage4.jpg'
-import majorsChart from '../assets/charts/demographics.jpg'
-import yearChart from '../assets/charts/demographics2.png'
 import SectionTitle from '../components/ui/SectionTitle'
 import GradientImage from '../components/ui/GradientImage'
+import BarChart from '../components/ui/BarChart'
 import './Home.css'
+
+// Ranked highest to lowest
+const MAJORS = [
+  { label: 'Mechanical Engineering', value: 6 },
+  { label: 'Computer Engineering', value: 5 },
+  { label: 'Electrical Engineering', value: 4 },
+  { label: 'Civil Engineering', value: 4 },
+  { label: 'Computer Science', value: 3 },
+  { label: 'Biomedical Engineering', value: 2 },
+  { label: 'Industrial Engineering', value: 1 },
+  { label: 'Environmental Engineering', value: 1 },
+  { label: 'Other', value: 1 },
+]
+
+// Kept in class order rather than ranked
+const YEARS = [
+  { label: 'Freshman', value: 5 },
+  { label: 'Sophomore', value: 13 },
+  { label: 'Junior', value: 6 },
+  { label: 'Senior', value: 3 },
+]
 
 export default function Home() {
   return (
@@ -17,9 +37,11 @@ export default function Home() {
         <img src={heroPhoto} alt="SHPE at UIC members" className="home-hero-img" />
         <div className="home-hero-overlay" />
         <div className="home-hero-content">
-          <img src={logo} alt="SHPE at UIC logo" className="home-hero-logo" />
+          <span className="logo-chip home-hero-logo-chip">
+            <img src={logo} alt="SHPE at UIC logo" className="home-hero-logo" />
+          </span>
           <h1>SHPE at UIC</h1>
-          <p>National Chapter</p>
+          <p>Student Chapter</p>
         </div>
       </section>
 
@@ -103,8 +125,8 @@ export default function Home() {
         <div className="section-center">
           <SectionTitle title="Demographics" />
           <div className="home-demographics-charts">
-            <img src={majorsChart} alt="Chapter demographics: breakdown of members by major" />
-            <img src={yearChart} alt="Chapter demographics: breakdown of members by year in school" />
+            <BarChart question="What is your major?" data={MAJORS} variant="blue" />
+            <BarChart question="What year are you in school?" data={YEARS} variant="orange" />
           </div>
         </div>
       </section>
