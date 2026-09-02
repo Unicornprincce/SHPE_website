@@ -55,16 +55,6 @@
   gap: 12px;
 }
 
-.btn-outline-navy {
-  background: transparent;
-  color: var(--navy);
-  border-color: var(--navy);
-}
-.btn-outline-navy:hover {
-  background: var(--navy);
-  color: var(--white);
-}
-
 .btn-disabled,
 .btn-disabled:hover {
   opacity: 0.55;
@@ -120,6 +110,12 @@
 
 .join-us-connect-icons svg {
   font-size: 2.2rem;
+}
+
+@media (max-width: 700px) {
+  .join-us-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 420px) {

@@ -142,6 +142,16 @@ html {
   color: var(--navy-dark);
   transform: translateY(-2px);
 }
+.btn-outline-navy {
+  background: transparent;
+  color: var(--navy);
+  border-color: var(--navy);
+}
+.btn-outline-navy:hover {
+  background: var(--navy);
+  color: var(--white);
+  transform: translateY(-2px);
+}
 
 /* ── Shared section title ── */
 .section-title {

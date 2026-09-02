@@ -9,6 +9,7 @@ const QUICK_LINKS = [
   { label: 'MentorSHPE', to: '/mentorshpe' },
   { label: 'Officers', to: '/officers' },
   { label: 'Join Us', to: '/join-us' },
+  { label: 'Alumni', to: '/alumni' },
 ]
 
 export default function Footer() {

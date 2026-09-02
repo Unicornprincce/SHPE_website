@@ -167,4 +167,14 @@
   .home-hero {
     height: 64vh;
   }
+
+  .home-panel-row {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .home-panel-photo {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
 }

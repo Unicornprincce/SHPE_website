@@ -15,9 +15,11 @@ const NAV_LINKS = [
     ],
   },
   { label: 'Officers', to: '/officers' },
+  { label: 'National Convention', to: '/national-convention' },
   { label: 'Awards', to: '/awards' },
   { label: 'Sponsors', to: '/sponsors' },
   { label: 'Calendar', to: '/calendar' },
+  { label: 'Alumni', to: '/alumni' },
 ]
 
 export default function Navbar() {

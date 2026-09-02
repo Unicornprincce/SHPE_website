@@ -1,0 +1,42 @@
+.alumni-hero {
+  padding: 64px 0 48px;
+  text-align: center;
+}
+
+.alumni-hero-inner h1 {
+  color: var(--white);
+}
+
+.alumni-hero-inner p {
+  margin-top: 10px;
+  color: var(--powder-blue);
+  font-size: 1.05rem;
+}
+
+.alumni-section {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.alumni-section p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 18px;
+}
+
+.alumni-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.alumni-contact-note {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: var(--grey);
+}

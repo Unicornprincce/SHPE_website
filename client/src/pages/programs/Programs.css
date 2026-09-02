@@ -100,8 +100,49 @@
   min-width: 0;
 }
 
+@media (max-width: 700px) {
+  .program-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 420px) {
   .program-row-photo {
     aspect-ratio: 1 / 1;
+  }
+}
+
+.program-stats {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.program-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.program-stat {
+  text-align: center;
+}
+
+.program-stat-number {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 800;
+  color: var(--orange-dark);
+}
+
+.program-stat-label {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .program-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
