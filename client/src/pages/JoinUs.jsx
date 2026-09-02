@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { FaInstagram, FaDiscord } from 'react-icons/fa6'
+import { FaInstagram, FaLinkedin, FaDiscord } from 'react-icons/fa6'
 import { SiLinktree } from 'react-icons/si'
 import getInvolvedPhoto from '../assets/join-us/get-involved.jpg'
 import nationalsPhoto from '../assets/join-us/nationals.jpg'
@@ -98,6 +98,15 @@ export default function JoinUs() {
             >
               <FaInstagram aria-hidden="true" />
               <span>Instagram</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/shpe-at-uic"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="SHPE at UIC on LinkedIn"
+            >
+              <FaLinkedin aria-hidden="true" />
+              <span>LinkedIn</span>
             </a>
             <a
               href="https://discord.gg/PS4AdaSK9"

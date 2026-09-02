@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { FaInstagram, FaDiscord } from 'react-icons/fa6'
+import { FaInstagram, FaLinkedin, FaDiscord } from 'react-icons/fa6'
 import { SiLinktree } from 'react-icons/si'
 import logo from '../../assets/logos/SHPE_logo_horiz_University of Illinois at Chicago_PMS.png'
 import './Footer.css'
@@ -48,6 +48,14 @@ export default function Footer() {
               aria-label="SHPE at UIC on Instagram"
             >
               <FaInstagram aria-hidden="true" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/shpe-at-uic"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="SHPE at UIC on LinkedIn"
+            >
+              <FaLinkedin aria-hidden="true" />
             </a>
             <a
               href="https://discord.gg/CagthVsvEb"
