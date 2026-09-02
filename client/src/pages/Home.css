@@ -160,16 +160,8 @@
   display: flex;
   gap: 32px;
   justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-}
-
-.home-demographics-charts img {
-  max-width: 480px;
-  width: 100%;
-  border-radius: 12px;
-  background: linear-gradient(160deg, #f7fafd 0%, #e2ecf7 100%);
-  box-shadow: var(--shadow-sm);
-  padding: 12px;
 }
 
 @media (max-width: 800px) {
