@@ -12,7 +12,7 @@ export default function Committees() {
         <h2>You could be here!</h2>
         <p>Committee sign-up form will be shared soon!</p>
         <p className="committees-cta-question">Interested in getting involved in the meantime?</p>
-        <NavLink to="/join-us" className="btn btn-primary">
+        <NavLink to="https://forms.gle/Ehb2moBVg4Y8DneLA" className="btn btn-primary">
           Apply Here
         </NavLink>
       </section>

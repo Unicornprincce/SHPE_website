@@ -69,7 +69,12 @@ export default function Navbar() {
                 </button>
                 <div className="navbar-dropdown-menu">
                   {item.children.map((child) => (
-                    <NavLink key={child.to} to={child.to} className="navbar-dropdown-link">
+                    <NavLink
+                      key={child.to}
+                      to={child.to}
+                      className="navbar-dropdown-link"
+                      onClick={(e) => e.currentTarget.blur()}
+                    >
                       {child.label}
                     </NavLink>
                   ))}
