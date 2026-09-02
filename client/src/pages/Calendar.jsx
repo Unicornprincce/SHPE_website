@@ -1,7 +1,27 @@
-import { FaRegCalendar } from 'react-icons/fa6'
+import { useEffect, useState } from 'react'
 import './Calendar.css'
 
+const CALENDAR_ID =
+  'NTE4MWNkNjk1ZGFhY2RhMTk1NDE5ZjU0OTQzMjg5ZDgwODMwZjJkZjFkYzk5MmU2MTRhMzBjOGEzNGNlZTE0N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t'
+const MOBILE_QUERY = '(max-width: 640px)'
+
+function embedUrl(mode) {
+  return `https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&mode=${mode}&src=${CALENDAR_ID}&color=%233f51b5`
+}
+
 export default function Calendar() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia(MOBILE_QUERY).matches
+  )
+
+  // Google's month grid is unreadable on phones, so fall back to the agenda list
+  useEffect(() => {
+    const mql = window.matchMedia(MOBILE_QUERY)
+    const handleChange = (event) => setIsMobile(event.matches)
+    mql.addEventListener('change', handleChange)
+    return () => mql.removeEventListener('change', handleChange)
+  }, [])
+
   return (
     <main className="calendar-page">
       <section className="calendar-hero section-dark">
@@ -12,13 +32,13 @@ export default function Calendar() {
       </section>
 
       <section className="calendar-section section-center">
-        <div className="calendar-embed-placeholder">
-          <FaRegCalendar aria-hidden="true" className="calendar-embed-icon" />
-          <p className="calendar-embed-title">Calendar embed coming soon</p>
-          <p className="calendar-embed-note">
-            This spot is reserved for our shared Google Calendar &mdash; a full month view that
-            board members will be able to update directly, no code required.
-          </p>
+        <div className="calendar-embed">
+          <iframe
+            src={embedUrl(isMobile ? 'AGENDA' : 'MONTH')}
+            title="SHPE at UIC events calendar"
+            className="calendar-embed-frame"
+            loading="lazy"
+          />
         </div>
       </section>
     </main>
