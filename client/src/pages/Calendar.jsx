@@ -6,7 +6,7 @@ const CALENDAR_ID =
 const MOBILE_QUERY = '(max-width: 640px)'
 
 function embedUrl(mode) {
-  return `https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&mode=${mode}&src=${CALENDAR_ID}&color=%233f51b5`
+  return `https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&title=SHPE%20%40%20UIC&src=NTE4MWNkNjk1ZGFhY2RhMTk1NDE5ZjU0OTQzMjg5ZDgwODMwZjJkZjFkYzk5MmU2MTRhMzBjOGEzNGNlZTE0N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23f4511e`
 }
 
 export default function Calendar() {
