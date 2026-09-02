@@ -1,5 +1,5 @@
 /* Shared styles for all Leadership pages (Executive Board, General Board,
-   Technical Teams, Committees) — hero banner + officer grid layout. */
+   Technical Teams, Committees): hero banner + officer grid layout. */
 
 .leadership-hero {
   position: relative;
@@ -80,7 +80,7 @@
   padding-top: 40px;
 }
 
-/* Tighter heading spacing than the site-wide default — these pages stack
+/* Tighter heading spacing than the site-wide default: these pages stack
    several headings and grids in a row, so the default 40px reads as a gap. */
 .leadership-section .section-title {
   margin-bottom: 12px;
@@ -114,8 +114,8 @@
   margin: 16px 0 12px;
 }
 
-/* ── Officer grid: flexbox rather than a rigid grid, so any row — 1, 2, or
-   3+ people — always centers instead of hugging the left edge. Cards keep
+/* ── Officer grid: flexbox rather than a rigid grid, so any row (1, 2, or
+   3+ people) always centers instead of hugging the left edge. Cards keep
    a fixed width so desktop settles at 3 per row. ── */
 .leadership-grid {
   display: flex;

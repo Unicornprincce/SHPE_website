@@ -14,7 +14,7 @@ export default function Sponsors() {
       <section className="sponsors-hero section-dark">
         <div className="section-center sponsors-hero-inner">
           <h1>Sponsor SHPE at UIC!</h1>
-          <p>Partner with UIC&rsquo;s chapter of the nation&rsquo;s largest Hispanic STEM organization.</p>
+          <p>Partner with the Society of Hispanic Professional Engineers Student Chapter at UIC.</p>
         </div>
       </section>
 

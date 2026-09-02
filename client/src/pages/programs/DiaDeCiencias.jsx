@@ -34,7 +34,7 @@ export default function DiaDeCiencias() {
           <h2 className="program-row-heading">Hands-On Experiments</h2>
           <p>
             From color-changing chemical reactions to guided experiments with everyday materials,
-            students work in small groups to observe, predict, and test results &mdash; building
+            students work in small groups to observe, predict, and test results, building
             comfort with the scientific method through play, not lectures.
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function DiaDeCiencias() {
           <h2 className="program-row-heading">Why It Matters</h2>
           <p>
             This SHPE-hosted event is a way for younger Hispanic students, and any student curious
-            about science, to get an early, hands-on introduction to STEM &mdash; guided by
+            about science, to get an early, hands-on introduction to STEM, guided by
             near-peer mentors from UIC who look like them and speak their language.
           </p>
           <a

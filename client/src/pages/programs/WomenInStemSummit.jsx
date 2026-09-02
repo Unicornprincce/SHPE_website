@@ -24,8 +24,8 @@ export default function WomenInStemSummit() {
 
       <section className="program-lead section-center">
         <p>
-          SHPE UIC hosted a Women in STEM Summit that gathered over 200 attendees &mdash; students
-          and professionals alike &mdash; along with 20+ participating companies. The event
+          SHPE UIC hosted a Women in STEM Summit that gathered over 200 attendees, students
+          and professionals alike, along with 20+ participating companies. The event
           featured interactive workshops, awarded a $1,000 scholarship, and gave away a National
           Convention ticket, creating a high-impact day that empowered women in technology while
           connecting them with career opportunities.
@@ -56,7 +56,7 @@ export default function WomenInStemSummit() {
           <h2 className="program-row-heading">Panels &amp; Workshops</h2>
           <p>
             The day is built around interactive workshops and panels with women already working in
-            the fields our members are headed into &mdash; engineers, managers, and executives who
+            the fields our members are headed into: engineers, managers, and executives who
             talk openly about how they got there and what they&rsquo;d do differently.
           </p>
         </div>
@@ -80,7 +80,7 @@ export default function WomenInStemSummit() {
           <p>
             With 20+ companies in the room, the summit is as much a recruiting floor as it is a
             conference. Attendees leave with contacts, referrals, and a much clearer sense of what
-            these roles actually look like &mdash; and one of them left with a $1,000 scholarship.
+            these roles actually look like, and one of them left with a $1,000 scholarship.
           </p>
         </div>
       </section>

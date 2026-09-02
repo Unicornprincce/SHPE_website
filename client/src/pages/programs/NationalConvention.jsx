@@ -55,7 +55,7 @@ export default function NationalConvention() {
           <h2 className="program-row-heading">Real Outcomes</h2>
           <p>
             Through the SHPE National Convention, our members secured on-site interviews,
-            scheduled follow-ups, and internship and full-time offers &mdash; proof that this
+            scheduled follow-ups, and internship and full-time offers: proof that this
             convention works as a recruiting and early-talent conversion pipeline. This year,
             Lizette Salinas, Luis Gonzalez, and Vanessa Del Real took home $3,000 as the
             first-place team in the SHPE National Academic Olympiad Competition.

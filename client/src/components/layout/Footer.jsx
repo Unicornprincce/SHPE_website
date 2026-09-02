@@ -24,7 +24,7 @@ export default function Footer() {
             <img src={logo} alt="SHPE at UIC" className="footer-logo" />
           </span>
           <p>
-            Society of Hispanic Professional Engineers — University of Illinois Chicago chapter.
+            Society of Hispanic Professional Engineers Student Chapter at UIC.
             Leading Hispanics in STEM.
           </p>
         </div>

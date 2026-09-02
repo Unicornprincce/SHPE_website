@@ -21,7 +21,7 @@ export default function JoinUs() {
           <h2 className="join-us-row-heading">Become a Member</h2>
           <p>
             You can become a paid member through SHPE National using the button below. You
-            don&rsquo;t need to be a paid member to come to our events &mdash; paying just helps
+            don&rsquo;t need to be a paid member to come to our events. Paying just helps
             support SHPE and unlocks access to the National Convention.
           </p>
           <a

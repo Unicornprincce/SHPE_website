@@ -29,7 +29,7 @@ export default function MentorSHPE() {
         <div className="program-row-text">
           <h2 className="program-row-heading">SHPE Sharktank</h2>
           <p>
-            We make the mentors pitch themselves &mdash; you&rsquo;ll learn their major and
+            We make the mentors pitch themselves: you&rsquo;ll learn their major and
             interests, and it helps not just us choose who gets paired, but who the mentees like,
             in order to have the best pairing. The way it works is they pitch themselves, and on a
             piece of paper the mentees will name their top 3 members that they liked, which helps

@@ -42,8 +42,8 @@ import joselynDeLeora from '../assets/officers/JoselynDeLeora.jpg'
 export { default as leadershipGroupPhoto } from '../assets/officers/group photo.jpeg'
 
 /**
- * What each role actually does — shown in the "?" popover on officer cards.
- * Left empty for now (on request) — the "?" button only appears once a role
+ * What each role actually does, shown in the "?" popover on officer cards.
+ * Left empty for now (on request). The "?" button only appears once a role
  * has text here, so fill these in whenever real copy is ready.
  */
 export const ROLE_DESCRIPTIONS = {
@@ -77,7 +77,7 @@ function withDescription(member) {
 }
 
 /**
- * President stands alone at the top of the chart — not tied to one pillar.
+ * President stands alone at the top of the chart, not tied to one pillar.
  */
 export const PRESIDENT = withDescription({
   role: 'President',
@@ -91,7 +91,7 @@ export const PRESIDENT = withDescription({
  * Every other Executive Board seat leads one pillar, shown together with
  * that pillar's General Board team, matching the corrected org chart:
  *  - Historian sits under Internal Communications (not Secretary)
- * (SHPEtinas is its own Executive Board seat — see EXECUTIVE_BOARD below —
+ * (SHPEtinas is its own Executive Board seat, see EXECUTIVE_BOARD below,
  * not a Community Team member.)
  */
 export const BOARD_PILLARS = [
@@ -173,7 +173,7 @@ export const EXECUTIVE_BOARD = [
 ]
 
 /**
- * Faculty Advisors — not pillar leads, shown as their own distinct group.
+ * Faculty Advisors, not pillar leads, shown as their own distinct group.
  */
 export const FACULTY_ADVISORS = [
   { role: 'Faculty Advisor', name: 'Dr. Matthew Alonso', email: '', linkedin: '', photo: matthewAlonso },
@@ -182,7 +182,7 @@ export const FACULTY_ADVISORS = [
 ].map(withDescription)
 
 /**
- * Technical Teams — three sub-teams, each with its own leads.
+ * Technical Teams, three sub-teams, each with its own leads.
  * Rank-and-file member rosters are still TBD.
  */
 export const TECHNICAL_TEAMS = [

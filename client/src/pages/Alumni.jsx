@@ -13,7 +13,7 @@ export default function Alumni() {
       <section className="alumni-section section-center">
         <p>
           Alumni, are you interested in being part of SHPE again? No matter how long it&rsquo;s
-          been &mdash; one year or ten &mdash; since you were active in SHPE at UIC, we&rsquo;d
+          been, one year or ten, since you were active in SHPE at UIC, we&rsquo;d
           love to reconnect, hear what you&rsquo;re up to, invite you back for events, and find
           ways to keep our alumni network engaged with current members.
         </p>
@@ -32,7 +32,7 @@ export default function Alumni() {
           </a>
         </div>
         <p className="alumni-contact-note">
-          Kloey Acevedo Bernal, Graduate Ambassador &mdash; grad.shpe.uic@gmail.com
+          Kloey Acevedo Bernal, Graduate Ambassador: grad.shpe.uic@gmail.com
         </p>
       </section>
     </main>
