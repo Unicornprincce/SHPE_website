@@ -170,7 +170,6 @@ export const BOARD_PILLARS = [
 export const EXECUTIVE_BOARD = [
   PRESIDENT,
   ...BOARD_PILLARS.flatMap((pillar) => pillar.leaders),
-  withDescription({ role: 'SHPEtinas', name: 'Ingrid Villagomez', email: 'shpetinas.shpe.uic@gmail.com', linkedin: '', photo: ingrid }),
 ]
 
 /**
