@@ -26,68 +26,24 @@
   color: var(--text);
 }
 
-.sponsors-tiers {
+.sponsors-package {
   padding-top: 56px;
   padding-bottom: 56px;
 }
 
-.sponsors-tiers-note {
-  text-align: center;
-  color: var(--grey);
-  font-size: 0.88rem;
-  margin-top: -24px;
-  margin-bottom: 32px;
-}
-
-.sponsors-tier-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.sponsors-tier-card {
-  background: var(--white);
-  border-radius: 12px;
-  box-shadow: var(--shadow-sm);
-  padding: 28px 20px;
-  border-top: 6px solid var(--grey);
-  text-align: center;
-}
-
-.sponsors-tier-bronze {
-  border-top-color: #b08d57;
-}
-.sponsors-tier-silver {
-  border-top-color: #9aa7b5;
-}
-.sponsors-tier-gold {
-  border-top-color: var(--orange);
-}
-.sponsors-tier-platinum {
-  border-top-color: var(--navy);
-}
-
-.sponsors-tier-name {
-  font-size: 1.15rem;
-}
-
-.sponsors-tier-price {
-  margin-top: 4px;
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--orange-dark);
-}
-
-.sponsors-tier-benefits {
-  margin-top: 18px;
-  text-align: left;
-  list-style: disc;
-  padding-left: 20px;
+.sponsors-package-inner {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  font-size: 0.88rem;
-  line-height: 1.5;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.sponsors-package-inner p {
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: var(--text);
 }
 
@@ -139,16 +95,7 @@
 }
 
 @media (max-width: 900px) {
-  .sponsors-tier-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .sponsors-why-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 560px) {
-  .sponsors-tier-grid {
     grid-template-columns: 1fr;
   }
 }

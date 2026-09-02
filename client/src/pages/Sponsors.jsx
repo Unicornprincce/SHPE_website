@@ -1,33 +1,6 @@
 import SectionTitle from '../components/ui/SectionTitle'
 import './Sponsors.css'
 
-const TIERS = [
-  {
-    name: 'Bronze',
-    price: '$350+',
-    accent: 'bronze',
-    benefits: ['Logo on event materials', 'Social media shoutout', 'Recognition at one General Body Meeting'],
-  },
-  {
-    name: 'Silver',
-    price: '$500+',
-    accent: 'silver',
-    benefits: ['Everything in Bronze', 'Tabling at one chapter event', 'Logo featured on our sponsors page'],
-  },
-  {
-    name: 'Gold',
-    price: '$1,000+',
-    accent: 'gold',
-    benefits: ['Everything in Silver', 'Company spotlight at a General Body Meeting', 'Priority invite to our recruiting events'],
-  },
-  {
-    name: 'Platinum',
-    price: '$1,500+',
-    accent: 'platinum',
-    benefits: ['Everything in Gold', 'Premier logo placement across all chapter materials', 'Dedicated info session or workshop with our members'],
-  },
-]
-
 const WHY_SPONSOR = [
   '100+ paid members and 60+ events hosted last semester alone.',
   'Recognized as a Gold Chapter (1 of 4 nationwide) and a Region 6 Outstanding Chapter.',
@@ -40,7 +13,7 @@ export default function Sponsors() {
     <main className="sponsors">
       <section className="sponsors-hero section-dark">
         <div className="section-center sponsors-hero-inner">
-          <h1>Wanna Sponsor Us?</h1>
+          <h1>Sponsor SHPE at UIC!</h1>
           <p>Partner with UIC&rsquo;s chapter of the nation&rsquo;s largest Hispanic STEM organization.</p>
         </div>
       </section>
@@ -54,26 +27,21 @@ export default function Sponsors() {
         </p>
       </section>
 
-      <section className="sponsors-tiers section-muted">
-        <div className="section-center">
-          <SectionTitle eyebrow="Sponsorship Pricing" title="Choose Your Tier" />
-          <p className="sponsors-tiers-note">
-            Draft benefits below &mdash; happy to tailor a package to what works best for your
-            company.
+      <section className="sponsors-package section-muted">
+        <div className="section-center sponsors-package-inner">
+          <SectionTitle eyebrow="Sponsorship Details" title="Access Our Partnership Package" />
+          <p>
+            Take a look at our full partnership package for sponsorship levels, benefits, and
+            everything your company needs to know about partnering with us.
           </p>
-          <div className="sponsors-tier-grid">
-            {TIERS.map((tier) => (
-              <div className={`sponsors-tier-card sponsors-tier-${tier.accent}`} key={tier.name}>
-                <h3 className="sponsors-tier-name">{tier.name}</h3>
-                <p className="sponsors-tier-price">{tier.price}</p>
-                <ul className="sponsors-tier-benefits">
-                  {tier.benefits.map((benefit) => (
-                    <li key={benefit}>{benefit}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          <a
+            className="btn btn-primary"
+            href="https://drive.google.com/file/d/122qip-BGBRxL2qKuhX5ZuNlGl4FuyXxU/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download Partnership Package
+          </a>
         </div>
       </section>
 
@@ -95,16 +63,6 @@ export default function Sponsors() {
           <a className="btn btn-primary" href="mailto:externalvp.shpe.uic@gmail.com">
             Contact Us
           </a>
-          <p className="sponsors-cta-more">
-            Or want more information?{' '}
-            <a
-              href="https://drive.google.com/file/d/122qip-BGBRxL2qKuhX5ZuNlGl4FuyXxU/view"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click here to learn more.
-            </a>
-          </p>
         </div>
       </section>
     </main>
