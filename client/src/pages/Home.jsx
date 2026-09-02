@@ -8,8 +8,6 @@ import GradientImage from '../components/ui/GradientImage'
 import BarChart from '../components/ui/BarChart'
 import './Home.css'
 
-const SURVEY_RESPONSES = 27
-
 // Ranked highest to lowest
 const MAJORS = [
   { label: 'Mechanical Engineering', value: 6 },
@@ -127,18 +125,8 @@ export default function Home() {
         <div className="section-center">
           <SectionTitle title="Demographics" />
           <div className="home-demographics-charts">
-            <BarChart
-              question="What is your major?"
-              responses={SURVEY_RESPONSES}
-              data={MAJORS}
-              variant="blue"
-            />
-            <BarChart
-              question="What year are you in school?"
-              responses={SURVEY_RESPONSES}
-              data={YEARS}
-              variant="orange"
-            />
+            <BarChart question="What is your major?" data={MAJORS} variant="blue" />
+            <BarChart question="What year are you in school?" data={YEARS} variant="orange" />
           </div>
         </div>
       </section>
