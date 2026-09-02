@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { FaInstagram, FaDiscord } from 'react-icons/fa6'
+import { SiLinktree } from 'react-icons/si'
 import getInvolvedPhoto from '../assets/join-us/get-involved.jpg'
 import nationalsPhoto from '../assets/join-us/nationals.jpg'
 import GradientImage from '../components/ui/GradientImage'
@@ -106,6 +107,15 @@ export default function JoinUs() {
             >
               <FaDiscord aria-hidden="true" />
               <span>Discord</span>
+            </a>
+            <a
+              href="https://linktr.ee/SHPE_UIC"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="SHPE at UIC on Linktree"
+            >
+              <SiLinktree aria-hidden="true" />
+              <span>Linktree</span>
             </a>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { FaInstagram, FaDiscord } from 'react-icons/fa6'
+import { SiLinktree } from 'react-icons/si'
 import logo from '../../assets/logos/SHPE_logo_horiz_University of Illinois at Chicago_PMS.png'
 import './Footer.css'
 
@@ -55,6 +56,14 @@ export default function Footer() {
               aria-label="SHPE at UIC on Discord"
             >
               <FaDiscord aria-hidden="true" />
+            </a>
+            <a
+              href="https://linktr.ee/SHPE_UIC"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="SHPE at UIC on Linktree"
+            >
+              <SiLinktree aria-hidden="true" />
             </a>
           </div>
         </div>
