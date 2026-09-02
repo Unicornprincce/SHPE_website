@@ -19,7 +19,7 @@ export default function Home() {
         <div className="home-hero-content">
           <img src={logo} alt="SHPE at UIC logo" className="home-hero-logo" />
           <h1>SHPE at UIC</h1>
-          <p>2026 National Chapter</p>
+          <p>National Chapter</p>
         </div>
       </section>
 

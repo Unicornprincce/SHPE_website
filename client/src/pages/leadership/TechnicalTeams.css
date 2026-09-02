@@ -1,0 +1,51 @@
+.technical-teams-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.technical-teams-tab {
+  border: 2px solid var(--border);
+  background: var(--white);
+  color: var(--text);
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.technical-teams-tab:hover {
+  border-color: var(--orange);
+}
+
+.technical-teams-tab.active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+}
+
+.technical-teams-title {
+  margin-bottom: 8px;
+}
+
+.technical-teams-members-slot {
+  max-width: 480px;
+  margin: 0 auto;
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  color: var(--grey);
+  font-size: 0.92rem;
+}
+
+.technical-teams-members-note {
+  text-align: center;
+  color: var(--grey);
+  font-size: 0.88rem;
+  font-style: italic;
+  margin-top: 24px;
+}

@@ -1,0 +1,159 @@
+/* Shared styles for all Leadership pages (Executive Board, General Board,
+   Technical Teams, Committees) — hero banner + officer grid layout. */
+
+.leadership-hero {
+  position: relative;
+  height: 38vh;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.leadership-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.leadership-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(0, 31, 91, 0.9) 0%,
+    rgba(0, 31, 91, 0.55) 40%,
+    rgba(253, 101, 47, 0.35) 100%
+  );
+}
+
+.leadership-hero-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.leadership-hero-title {
+  color: var(--white);
+  font-size: clamp(2.6rem, 7vw, 4.8rem);
+  letter-spacing: 0.08em;
+}
+
+/* ── Top-level section tabs (Executive Board / General Board / Technical Teams / Committees) ── */
+.leadership-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.leadership-tab {
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.leadership-tab:hover {
+  border-color: var(--white);
+}
+
+.leadership-tab.active {
+  background: var(--white);
+  color: var(--navy-dark);
+  border-color: var(--white);
+}
+
+.leadership-section {
+  padding-top: 24px;
+  padding-bottom: 4px;
+}
+
+.leadership-section:first-of-type {
+  padding-top: 40px;
+}
+
+/* Tighter heading spacing than the site-wide default — these pages stack
+   several headings and grids in a row, so the default 40px reads as a gap. */
+.leadership-section .section-title {
+  margin-bottom: 12px;
+}
+
+.leadership-section-note {
+  text-align: center;
+  color: var(--grey);
+  font-size: 0.88rem;
+  margin-top: -24px;
+  margin-bottom: 32px;
+}
+
+/* ── "Led by ..." line shown under each General Board pillar heading ── */
+.leadership-led-by {
+  text-align: center;
+  color: var(--grey);
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ── Small uppercase label used above a "Leads" or "Team" grouping ── */
+.leadership-subheading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: var(--orange);
+  margin: 16px 0 12px;
+}
+
+/* ── Officer grid: flexbox rather than a rigid grid, so any row — 1, 2, or
+   3+ people — always centers instead of hugging the left edge. Cards keep
+   a fixed width so desktop settles at 3 per row. ── */
+.leadership-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px 28px;
+}
+
+.leadership-grid > * {
+  flex: 0 0 280px;
+  max-width: 280px;
+}
+
+@media (max-width: 760px) {
+  .leadership-grid > * {
+    flex-basis: 46%;
+  }
+}
+
+@media (max-width: 480px) {
+  .leadership-grid > * {
+    flex-basis: 100%;
+    max-width: 320px;
+  }
+}
+
+/* ── Faculty Advisors get their own big, clearly separated heading ── */
+.leadership-faculty-advisors {
+  border-top: 2px solid var(--border);
+  margin-top: 8px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.leadership-faculty-advisors-title {
+  text-align: center;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  letter-spacing: 0.04em;
+  color: var(--navy);
+  margin-bottom: 24px;
+}

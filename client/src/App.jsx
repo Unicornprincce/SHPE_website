@@ -1,8 +1,11 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import PlaceholderPage from './components/ui/PlaceholderPage'
 import Home from './pages/Home'
-import Officers from './pages/Officers'
+import ExecutiveBoard from './pages/leadership/ExecutiveBoard'
+import GeneralBoard from './pages/leadership/GeneralBoard'
+import TechnicalTeams from './pages/leadership/TechnicalTeams'
+import Committees from './pages/leadership/Committees'
 import SHPEtinas from './pages/programs/SHPEtinas'
 import MentorSHPE from './pages/programs/MentorSHPE'
 import DiaDeCiencias from './pages/programs/DiaDeCiencias'
@@ -17,7 +20,12 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/officers" element={<Officers />} />
+          <Route path="/leadership/executive-board" element={<ExecutiveBoard />} />
+          <Route path="/leadership/general-board" element={<GeneralBoard />} />
+          <Route path="/leadership/technical-teams" element={<TechnicalTeams />} />
+          <Route path="/leadership/committees" element={<Committees />} />
+          {/* Old link kept working for anyone with it bookmarked/shared */}
+          <Route path="/officers" element={<Navigate to="/leadership/executive-board" replace />} />
           <Route path="/shpetinas" element={<SHPEtinas />} />
           <Route path="/mentorshpe" element={<MentorSHPE />} />
           <Route path="/dia-de-ciencias" element={<DiaDeCiencias />} />

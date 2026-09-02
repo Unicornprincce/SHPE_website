@@ -14,7 +14,15 @@ const NAV_LINKS = [
       { label: 'Dia de Ciencias', to: '/dia-de-ciencias' },
     ],
   },
-  { label: 'Officers', to: '/officers' },
+  {
+    label: 'Leadership',
+    children: [
+      { label: 'Executive Board', to: '/leadership/executive-board' },
+      { label: 'General Board', to: '/leadership/general-board' },
+      { label: 'Technical Teams', to: '/leadership/technical-teams' },
+      { label: 'Committees', to: '/leadership/committees' },
+    ],
+  },
   { label: 'Awards', to: '/awards' },
   { label: 'Sponsors', to: '/sponsors' },
   { label: 'Calendar', to: '/calendar' },
@@ -22,11 +30,14 @@ const NAV_LINKS = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false)
+  const [openMobileDropdown, setOpenMobileDropdown] = useState(null)
 
   // Close the mobile drawer whenever the route changes
   useEffect(() => {
-    const handleRouteChange = () => setMobileOpen(false)
+    const handleRouteChange = () => {
+      setMobileOpen(false)
+      setOpenMobileDropdown(null)
+    }
     window.addEventListener('popstate', handleRouteChange)
     return () => window.removeEventListener('popstate', handleRouteChange)
   }, [])
@@ -95,16 +106,18 @@ export default function Navbar() {
               <button
                 type="button"
                 className="navbar-mobile-group-trigger"
-                aria-expanded={mobileDropdownOpen}
-                onClick={() => setMobileDropdownOpen((open) => !open)}
+                aria-expanded={openMobileDropdown === item.label}
+                onClick={() =>
+                  setOpenMobileDropdown((open) => (open === item.label ? null : item.label))
+                }
               >
                 {item.label}
                 <FaChevronDown
                   aria-hidden="true"
-                  className={`navbar-dropdown-icon ${mobileDropdownOpen ? 'rotated' : ''}`}
+                  className={`navbar-dropdown-icon ${openMobileDropdown === item.label ? 'rotated' : ''}`}
                 />
               </button>
-              {mobileDropdownOpen && (
+              {openMobileDropdown === item.label && (
                 <div className="navbar-mobile-submenu">
                   {item.children.map((child) => (
                     <NavLink

@@ -7,7 +7,7 @@ const QUICK_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'SHPEtinas', to: '/shpetinas' },
   { label: 'MentorSHPE', to: '/mentorshpe' },
-  { label: 'Officers', to: '/officers' },
+  { label: 'Leadership', to: '/leadership/executive-board' },
   { label: 'Join Us', to: '/join-us' },
 ]
 
